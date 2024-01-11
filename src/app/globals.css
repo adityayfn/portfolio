@@ -2,26 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer components {
+  .line-hover {
+    @apply absolute -bottom-1 left-0 w-0 h-1 bg-primary transition-all group-hover:w-full;
+  }
+  .active {
+    @apply text-primary;
+  }
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@import url("https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap");
+
+html {
+  scroll-behavior: smooth;
 }
+.font-primary {
+  font-family: "Aoboshi One", serif;
+}
+
+/* .active {
+  color: red;
+} */
