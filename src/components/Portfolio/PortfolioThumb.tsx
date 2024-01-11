@@ -1,7 +1,4 @@
-import { mdiArrowTopRightBoldBox } from "@mdi/js"
-import Icon from "@mdi/react"
 import Link from "next/link"
-import { FC } from "react"
 import { FaSquareArrowUpRight } from "react-icons/fa6"
 
 interface IModal {

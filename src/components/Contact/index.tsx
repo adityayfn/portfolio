@@ -1,16 +1,5 @@
 import React from "react"
 import ContactItem from "./ContactItem"
-
-import {
-  mdiEmail,
-  mdiGithub,
-  mdiInstagram,
-  mdiLinkedin,
-  mdiMapMarker,
-  mdiPhone,
-  mdiShareVariant,
-} from "@mdi/js"
-import Icon from "@mdi/react"
 import Reveal from "@/utils/Reveal"
 import {
   FaGithub,

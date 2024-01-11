@@ -1,5 +1,3 @@
-import Icon from "@mdi/react"
-
 interface Props {
   title: string
   icon: any

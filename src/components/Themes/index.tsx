@@ -1,7 +1,5 @@
 "use client"
 import { useState } from "react"
-import Icon from "@mdi/react"
-import { mdiCogOutline } from "@mdi/js"
 import Colors from "./Colors"
 import { FaGear } from "react-icons/fa6"
 
